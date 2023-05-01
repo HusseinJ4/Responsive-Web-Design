@@ -1,0 +1,39 @@
+body{
+}
+section{
+  margin: auto;
+  position: relative;
+  width: calc(100vw - 20em);
+}
+
+
+img{
+height: 600px;
+}
+
+#slideshow img{
+
+  position: absolute;
+  left:0;
+  opacity: 0;
+  width:100%;
+  transition: 1s;
+  z-index: -1;
+}
+
+
+#slideshow img.current{
+  width: 500px;
+  opacity: 1;
+
+}
+
+#slideshow img.next{
+  width: 500px;
+  opacity: 1;
+
+}
+
+#slideshow button{
+  z-index: 2;
+}
